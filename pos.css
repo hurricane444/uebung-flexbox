@@ -1,74 +1,97 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html, body{
-	height: 100%;
-	width:  100%;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 100%;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
 }
 
-h1{
-	margin: 1rem 0;
+h1 {
+  margin: 1rem 0;
 }
 
-section{
-
-	border-bottom: 1px solid #000;
+section {
+  border-bottom: 1px solid #000;
 }
 
-.wrapper{
-	max-width: 600px;
-	margin: 0 auto;
-	min-height: 300px;
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 300px;
 }
 
-.row{
-	width:  100%;
-	min-width: 10px;
-	padding: 1rem 0;
-	min-height: 300px;
-	display: block;
+.row {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 300px;
+  display: block;
 }
 
-
-.col{
-	
-	min-width: 20px;
-	min-height: 70px;
-	margin: 10px;
-
-
+.col {
+  min-width: 20px;
+  min-height: 70px;
+  margin: 10px;
 }
 
-.trolley-grey{
-	background: #7D7C84;
-
-
+.trolley-grey {
+  background: #7D7C84;
+  flex-grow: 1;
+	order: 1;
 }
 
-.sea-green{
-	background: #2D93AD;
-
-
+.sea-green {
+  background: #2D93AD;
+	flex-grow:1
 }
 
-.middle-red{
-	background: #DE8F6E;
+.middle-red {
+  background: #DE8F6E;
+	flex-grow: 1;
 
 }
 
-.black{
-	background: #000;
+.black {
+  background: #000;
+	flex-grow: 1;
 }
 
-.orange{
-	background: orange;
-	order: 5;
+.orange {
+  background: orange;
+flex-grow: 1;
 
 }
 
-.olive{
-	background: olive;
+.olive {
+  background: olive;
+	flex-grow: 1
+}
+
+.flex {
+  background: purple;
+  display: flex;
+  /*justify-content ist die Ausrichtung auf der x-Achse*/
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+#werner{
+background:red; height:400px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+#susi{
+	background: blue;
+	flex-grow:2
+}
+
+#peter{
+	background: white;
+	flex-grow:1
 }
